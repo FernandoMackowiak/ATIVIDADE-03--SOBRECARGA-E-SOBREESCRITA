@@ -1,0 +1,19 @@
+ Exemplo de sobreescrita de método
+public class Animal {
+    public void fazerSom() {
+        System.out.println("Animal fazendo som...");
+    }
+}
+
+public class Cachorro extends Animal {
+    @Override
+    public void fazerSom() {
+        System.out.println("Au Au!");
+    }
+    
+    O teste
+    public static void main(String[] args) {
+        Animal animal = new Cachorro();
+        animal.fazerSom(); // Saída: Au Au!
+    }
+}
